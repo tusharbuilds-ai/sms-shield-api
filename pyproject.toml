@@ -1,0 +1,15 @@
+[project]
+name = "smsgaurd"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.139.2",
+    "joblib>=1.5.3",
+    "langchain>=1.3.14",
+    "langchain-google-genai>=4.2.7",
+    "python-dotenv>=1.2.2",
+    "scikit-learn>=1.9.0",
+    "uvicorn>=0.51.0",
+]
