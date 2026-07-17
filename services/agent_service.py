@@ -16,4 +16,4 @@ def ai_explaination(message:str,sender:str,classification:str,language:str):
     "messages":[{"role":"user", "content":f"""Message received -> {message} , Sent By -> {sender}, SVM model prediction - > {classification}, explanation language -> {language}. Explain only in 80 words."""}]
     })
 
-    return result["messages"][-1].content_blocks
+    return result["messages"][-1].content_blocks[0]["text"]
