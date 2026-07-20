@@ -21,7 +21,7 @@ def analize(payload:AnalyzeSchema,model = Depends(get_model),vectorizor = Depend
             prediction,
             payload.language
         )
-
+        info(f"Message:- {payload.message}")
         info("AI Explanation done.")
         success("Returning the result.")
         return ReturnResponse(
